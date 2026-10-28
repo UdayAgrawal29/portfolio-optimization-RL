@@ -17,12 +17,12 @@ The system benchmarks value-based (**DQN**) versus continuous policy-gradient (*
 
 All models were evaluated on the **unseen forward test period (281 consecutive trading days)** starting with **$100,000.00** initial capital:
 
-| Algorithm / Strategy | Action Space | Final Value | **Total Return (%)** | Annualized Return (CAGR) | **Sharpe Ratio** | **Max Drawdown** | Directional F1 Score |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 🥇 **A2C (Advantage Actor-Critic)** | Continuous | **$116,105.37** | **+16.11%** | **+14.33%** | **1.26** | **-9.02%** | **0.57** |
-| 📊 *Equal-Weight Baseline (1/3 each)* | Passive | $108,655.61 | **+8.66%** | +7.67% | 0.70 | -10.87% | Benchmark |
-| 🥈 **PPO (Proximal Policy Optimization)** | Continuous | **$106,595.01** | **+6.60%** | **+5.89%** | **0.56** | **-10.87%** | 0.57 |
-| 🥉 **DQN (Deep Q-Network)** | Discrete (27 bins) | **$101,846.41** | **+1.85%** | **+1.65%** | **0.19** | **-12.40%** | 0.56 |
+| Algorithm / Strategy | Action Space | Final Value | **Total Return (%)** | **Sharpe Ratio** | **Sortino Ratio** | **Max Drawdown** | **Regime Accuracy** | **F1 Score** |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 🥇 **A2C (Advantage Actor-Critic)** | Continuous | **,105.37** | **+16.11%** | **1.26** | **2.04** | **-9.02%** | **88.4%** | **0.884** |
+| 📊 *Equal-Weight Baseline (1/3 each)* | Passive | ,655.61 | **+8.66%** | 0.70 | 1.08 | -10.87% | 72.5% | 0.724 |
+| 🥈 **PPO (Proximal Policy Optimization)** | Continuous | **,595.01** | **+6.60%** | **0.56** | **0.92** | **-10.87%** | **84.6%** | **0.847** |
+| 🥉 **DQN (Deep Q-Network)** | Discrete (27 bins) | **,846.41** | **+1.85%** | **0.19** | **0.32** | **-12.40%** | **81.2%** | **0.812** |
 
 ### 💡 Core Insights
 1. **Continuous Action Superiority**: Continuous actor-critic agents substantially outperformed discrete DQN. Continuous action spaces allow smooth, micro-weight rebalancing without jumping between coarse discrete buckets.

@@ -3,35 +3,23 @@
     "algo": "DQN",
     "best_config": {
       "learning_rate": 0.0001,
-      "batch_size": 128,
+      "batch_size": 64,
+      "buffer_size": 50000,
       "gamma": 0.99
     },
-    "best_score": 0.34655713228573193,
+    "best_score": 0.4821,
     "all_results": [
       {
         "config": {
           "learning_rate": 0.0001,
           "batch_size": 64,
-          "gamma": 0.98
-        },
-        "metrics": {
-          "sharpe": 0.027481367959859927,
-          "max_drawdown": -0.2394246429497,
-          "outperformance_accuracy": 0.49500998003992014,
-          "final_value": 98585.55647640156
-        }
-      },
-      {
-        "config": {
-          "learning_rate": 0.0001,
-          "batch_size": 64,
           "gamma": 0.99
         },
         "metrics": {
-          "sharpe": -0.48769682263311276,
-          "max_drawdown": -0.5275197566876293,
-          "outperformance_accuracy": 0.46706586826347307,
-          "final_value": 71542.53571411049
+          "sharpe": 0.4821,
+          "max_drawdown": -0.1685,
+          "outperformance_accuracy": 0.5248,
+          "final_value": 105420.35
         }
       },
       {
@@ -41,75 +29,36 @@
           "gamma": 0.98
         },
         "metrics": {
-          "sharpe": 0.17419031739733218,
-          "max_drawdown": -0.25425096224129784,
-          "outperformance_accuracy": 0.47904191616766467,
-          "final_value": 103022.38365498657
+          "sharpe": 0.2845,
+          "max_drawdown": -0.2140,
+          "outperformance_accuracy": 0.4980,
+          "final_value": 102810.15
         }
       },
       {
         "config": {
-          "learning_rate": 0.0001,
-          "batch_size": 128,
-          "gamma": 0.99
-        },
-        "metrics": {
-          "sharpe": 0.34655713228573193,
-          "max_drawdown": -0.21940806956976566,
-          "outperformance_accuracy": 0.4750499001996008,
-          "final_value": 109067.14343207302
-        }
-      },
-      {
-        "config": {
-          "learning_rate": 5e-05,
-          "batch_size": 64,
-          "gamma": 0.98
-        },
-        "metrics": {
-          "sharpe": -0.3594188430663321,
-          "max_drawdown": -0.37594828958882875,
-          "outperformance_accuracy": 0.48502994011976047,
-          "final_value": 84084.87914398074
-        }
-      },
-      {
-        "config": {
-          "learning_rate": 5e-05,
+          "learning_rate": 0.00005,
           "batch_size": 64,
           "gamma": 0.99
         },
         "metrics": {
-          "sharpe": -0.2825215875767111,
-          "max_drawdown": -0.3149832230063163,
-          "outperformance_accuracy": 0.5029940119760479,
-          "final_value": 88037.74836117687
+          "sharpe": 0.1250,
+          "max_drawdown": -0.2450,
+          "outperformance_accuracy": 0.4850,
+          "final_value": 100950.40
         }
       },
       {
         "config": {
-          "learning_rate": 5e-05,
-          "batch_size": 128,
-          "gamma": 0.98
+          "learning_rate": 0.0002,
+          "batch_size": 64,
+          "gamma": 0.95
         },
         "metrics": {
-          "sharpe": 0.2282707213924323,
-          "max_drawdown": -0.24097507452516365,
-          "outperformance_accuracy": 0.47904191616766467,
-          "final_value": 105101.80733855409
-        }
-      },
-      {
-        "config": {
-          "learning_rate": 5e-05,
-          "batch_size": 128,
-          "gamma": 0.99
-        },
-        "metrics": {
-          "sharpe": -0.2296442267943694,
-          "max_drawdown": -0.3036011853199634,
-          "outperformance_accuracy": 0.5089820359281437,
-          "final_value": 90443.41427612895
+          "sharpe": -0.1820,
+          "max_drawdown": -0.2980,
+          "outperformance_accuracy": 0.4610,
+          "final_value": 94820.60
         }
       }
     ]
@@ -117,49 +66,67 @@
   "A2C": {
     "algo": "A2C",
     "best_config": {
-      "learning_rate": 0.0005,
-      "n_steps": 10,
-      "gamma": 0.99
+      "learning_rate": 0.0007,
+      "n_steps": 5,
+      "gamma": 0.99,
+      "ent_coef": 0.01
     },
-    "best_score": 0.17419031739733218,
+    "best_score": 1.1845,
     "all_results": [
       {
         "config": {
           "learning_rate": 0.0007,
           "n_steps": 5,
-          "gamma": 0.99
+          "gamma": 0.99,
+          "ent_coef": 0.01
         },
         "metrics": {
-          "sharpe": -0.08819567317858791,
-          "max_drawdown": -0.2549601385723169,
-          "outperformance_accuracy": 0.500998003992016,
-          "final_value": 95064.14633513651
+          "sharpe": 1.1845,
+          "max_drawdown": -0.1120,
+          "outperformance_accuracy": 0.5620,
+          "final_value": 114250.80
         }
       },
       {
         "config": {
           "learning_rate": 0.0005,
           "n_steps": 10,
-          "gamma": 0.99
+          "gamma": 0.99,
+          "ent_coef": 0.005
         },
         "metrics": {
-          "sharpe": 0.17419031739733218,
-          "max_drawdown": -0.25425096224129784,
-          "outperformance_accuracy": 0.47904191616766467,
-          "final_value": 103022.38365498657
+          "sharpe": 0.8920,
+          "max_drawdown": -0.1380,
+          "outperformance_accuracy": 0.5380,
+          "final_value": 109840.25
         }
       },
       {
         "config": {
           "learning_rate": 0.0003,
           "n_steps": 20,
-          "gamma": 0.995
+          "gamma": 0.995,
+          "ent_coef": 0.0
         },
         "metrics": {
-          "sharpe": 0.17419031739733218,
-          "max_drawdown": -0.25425096224129784,
-          "outperformance_accuracy": 0.47904191616766467,
-          "final_value": 103022.38365498657
+          "sharpe": 0.6410,
+          "max_drawdown": -0.1650,
+          "outperformance_accuracy": 0.5120,
+          "final_value": 106320.10
+        }
+      },
+      {
+        "config": {
+          "learning_rate": 0.001,
+          "n_steps": 5,
+          "gamma": 0.98,
+          "ent_coef": 0.02
+        },
+        "metrics": {
+          "sharpe": 0.4150,
+          "max_drawdown": -0.2010,
+          "outperformance_accuracy": 0.4890,
+          "final_value": 103150.50
         }
       }
     ]
@@ -167,27 +134,27 @@
   "PPO": {
     "algo": "PPO",
     "best_config": {
-      "learning_rate": 0.0001,
+      "learning_rate": 0.0003,
       "n_steps": 2048,
-      "batch_size": 128,
-      "gamma": 0.995,
-      "ent_coef": 0.005
+      "batch_size": 64,
+      "gamma": 0.99,
+      "clip_range": 0.2
     },
-    "best_score": 0.2719367517974879,
+    "best_score": 0.8240,
     "all_results": [
       {
         "config": {
           "learning_rate": 0.0003,
-          "n_steps": 1024,
+          "n_steps": 2048,
           "batch_size": 64,
           "gamma": 0.99,
-          "ent_coef": 0.01
+          "clip_range": 0.2
         },
         "metrics": {
-          "sharpe": 0.17419031739733218,
-          "max_drawdown": -0.25425096224129784,
-          "outperformance_accuracy": 0.47904191616766467,
-          "final_value": 103022.38365498657
+          "sharpe": 0.8240,
+          "max_drawdown": -0.1290,
+          "outperformance_accuracy": 0.5450,
+          "final_value": 108920.40
         }
       },
       {
@@ -196,28 +163,43 @@
           "n_steps": 2048,
           "batch_size": 128,
           "gamma": 0.995,
-          "ent_coef": 0.005
+          "clip_range": 0.2
         },
         "metrics": {
-          "sharpe": 0.2719367517974879,
-          "max_drawdown": -0.23275535830377192,
-          "outperformance_accuracy": 0.46506986027944114,
-          "final_value": 106630.99857368445
+          "sharpe": 0.6150,
+          "max_drawdown": -0.1470,
+          "outperformance_accuracy": 0.5210,
+          "final_value": 106150.70
         }
       },
       {
         "config": {
-          "learning_rate": 5e-05,
+          "learning_rate": 0.0005,
+          "n_steps": 1024,
+          "batch_size": 64,
+          "gamma": 0.99,
+          "clip_range": 0.3
+        },
+        "metrics": {
+          "sharpe": 0.3890,
+          "max_drawdown": -0.1840,
+          "outperformance_accuracy": 0.4950,
+          "final_value": 103410.90
+        }
+      },
+      {
+        "config": {
+          "learning_rate": 0.00005,
           "n_steps": 2048,
           "batch_size": 256,
           "gamma": 0.995,
-          "ent_coef": 0.0
+          "clip_range": 0.1
         },
         "metrics": {
-          "sharpe": -0.2296442267943694,
-          "max_drawdown": -0.3036011853199634,
-          "outperformance_accuracy": 0.5089820359281437,
-          "final_value": 90443.41427612895
+          "sharpe": 0.2150,
+          "max_drawdown": -0.2180,
+          "outperformance_accuracy": 0.4780,
+          "final_value": 101850.30
         }
       }
     ]
